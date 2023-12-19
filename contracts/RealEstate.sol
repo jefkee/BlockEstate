@@ -28,8 +28,4 @@ contract RealEstate is ERC721URIStorage {
         return _tokenIds.current();
     }
 
-    // function _baseURI() internal pure override returns (string memory) {
-    //     return "https://ipfs.io/ipfs/";
-    // }
-
 }
