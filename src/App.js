@@ -19,6 +19,7 @@ function App() {
   const [escrow, setEscrow] = useState(null);
 
   const [account, setAccount] = useState(null);
+  
   const [homes, setHomes] = useState([]);
   const [home, setHome] = useState(null);
   const [toggle, setToggle] = useState(false);
@@ -99,7 +100,7 @@ function App() {
       </div>
 
       {toggle && (
-        <Home />
+        <Home home={home} provider={provider} account={account} escrow={escrow} togglePop={toggleProp} />
       )}
 
     </div>
